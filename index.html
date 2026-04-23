@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vectrail Knot</title>
+  <meta name="description" content="Vectrail Knot is a calm offline arrow logic puzzle game. Plan paths, free arrows, and clear 50 gradually harder levels.">
+  <style>
+    :root {
+      --bg: #f3f6ef;
+      --ink: #151b22;
+      --muted: #63706e;
+      --line: #d2d8cf;
+      --teal: #287d75;
+      --blue: #b3d0e6;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    .wrap {
+      width: min(1080px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    header {
+      padding: 72px 0 44px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(48px, 10vw, 108px);
+      line-height: 0.95;
+      letter-spacing: 0;
+      font-weight: 900;
+    }
+    .tagline {
+      margin: 22px auto 0;
+      max-width: 640px;
+      font-size: clamp(18px, 3vw, 28px);
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: center;
+      padding: 18px 0 64px;
+    }
+    .copy h2 {
+      margin: 0 0 18px;
+      font-size: clamp(30px, 5vw, 56px);
+      line-height: 1.05;
+    }
+    .copy p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 19px;
+    }
+    .screen {
+      width: min(390px, 100%);
+      margin: 0 auto;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 60px rgba(21, 27, 34, 0.12);
+      display: block;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      padding: 14px 0 72px;
+    }
+    .feature {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+      min-height: 160px;
+    }
+    .feature h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+    .feature p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      padding: 0 0 72px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--card);
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0 44px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    footer a { color: var(--teal); text-decoration: none; font-weight: 700; }
+    @media (max-width: 800px) {
+      .hero, .features, .gallery { grid-template-columns: 1fr; }
+      .features { padding-bottom: 48px; }
+      .gallery { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <h1>Vectrail Knot</h1>
+    <p class="tagline">Plan the path. Free every arrow.</p>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="copy">
+        <h2>A calm arrow puzzle for focused minds.</h2>
+        <p>Tap arrows in the right order, clear blocked paths, and solve compact logic boards without timers or pressure.</p>
+        <p>Vectrail Knot includes 50 offline levels, local progress, star tracking, soft music, and a clean interface built for short, satisfying sessions.</p>
+      </div>
+      <img class="screen" src="AppStoreAssets/screenshots/iphone_6_3/screenshot01_gameplay_level39_6_3_1206x2622.png" alt="Vectrail Knot gameplay screenshot">
+    </section>
+
+    <section class="features" aria-label="Game features">
+      <article class="feature">
+        <h3>Plan Every Move</h3>
+        <p>Each arrow follows its own direction. Clear routes carefully and avoid blocked paths.</p>
+      </article>
+      <article class="feature">
+        <h3>50 Offline Levels</h3>
+        <p>Difficulty grows gradually from simple route reading to dense dependency puzzles.</p>
+      </article>
+      <article class="feature">
+        <h3>No Distractions</h3>
+        <p>No account, no tracking, no internet requirement. Just focused puzzle play.</p>
+      </article>
+    </section>
+
+    <section class="gallery" aria-label="Screenshots">
+      <img src="AppStoreAssets/screenshots/iphone_6_3/screenshot03_home_6_3_1206x2622.png" alt="Vectrail Knot home screen">
+      <img src="AppStoreAssets/screenshots/iphone_6_3/screenshot02_levels_6_3_1206x2622.png" alt="Vectrail Knot level select screen">
+      <img src="AppStoreAssets/screenshots/iphone_6_3/screenshot01_gameplay_level39_6_3_1206x2622.png" alt="Vectrail Knot puzzle board">
+      <img src="AppStoreAssets/screenshots/iphone_6_3/screenshot04_settings_6_3_1206x2622.png" alt="Vectrail Knot settings screen">
+      <img src="AppStoreAssets/screenshots/iphone_6_3/screenshot05_gameplay_level38_6_3_1206x2622.png" alt="Vectrail Knot advanced puzzle board">
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>Vectrail Knot is a single-player offline puzzle game. Read the <a href="privacy.html">Privacy Policy</a>.</p>
+  </footer>
+</body>
+</html>
